@@ -27,7 +27,7 @@
       <a
         target="_blank"
         href="https://www.facebook.com/ania.kryghevych"
-        class="join-link"
+        class="join-link f"
       >
         <svg class="join-icon" width="20" height="20">
           <use href="../imeges/icons.svg#icon-facebook"></use>
@@ -35,20 +35,11 @@
       </a>
       <a
         target="_blank"
-        href="https://www.facebook.com/ania.kryghevych"
-        class="join-link"
+        href="https://www.instagram.com/ania_kr5/"
+        class="join-link i"
       >
         <svg class="join-icon" width="20" height="20">
-          <use href="../imeges/icons.svg#icon-facebook"></use>
-        </svg>
-      </a>
-      <a
-        target="_blank"
-        href="https://www.facebook.com/ania.kryghevych"
-        class="join-link"
-      >
-        <svg class="join-icon" width="20" height="20">
-          <use href="../imeges/icons.svg#icon-facebook"></use>
+          <use href="../imeges/instagram_f_icon-icons.com_65485.svg"></use>
         </svg>
       </a>
     </div>
@@ -89,6 +80,9 @@ export default {};
     fill: white;
     background-color: teal;
   }
+}
+.f{
+  margin-right: 10px;
 }
 .add {
   margin-left: 100px;

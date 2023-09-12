@@ -2,24 +2,44 @@
   <div>
     <ul class="we-doing-list list">
       <li class="we-doing-item">
-        <img class="we-doing-img" src="../imeges/children.jpg" alt="дитина" width="371" />
+        <img
+          class="we-doing-img"
+          src="../imeges/children.jpg"
+          alt="дитина"
+          width="371"
+        />
         <p class="we-doing-img-title">Дитяча фотографія</p>
       </li>
       <li class="we-doing-item">
-        <img class="we-doing-img" src="../imeges/femily.jpg" alt="сім'я" width="371" />
+        <img
+          class="we-doing-img"
+          src="../imeges/femily.jpg"
+          alt="сім'я"
+          width="371"
+        />
         <p class="we-doing-img-title">Сімейна зйомка</p>
       </li>
       <li class="we-doing-item">
-        <img class="we-doing-img" src="../imeges/love-story.jpg" alt="закохані" width="371" />
+        <img
+          class="we-doing-img"
+          src="../imeges/love-story.jpg"
+          alt="закохані"
+          width="371"
+        />
         <p class="we-doing-img-title" lang="en">love story</p>
       </li>
       <li class="we-doing-item">
-        <img class="we-doing-img" src="../imeges/clas.jpg" alt="однокласники" width="371" />
+        <img
+          class="we-doing-img"
+          src="../imeges/clas.jpg"
+          alt="однокласники"
+          width="371"
+        />
         <p class="we-doing-img-title">шкільна фотосесія</p>
       </li>
       <li class="we-doing-item">
         <img
-        class="we-doing-img"
+          class="we-doing-img"
           src="../imeges/christening.jpg"
           alt="хрещення дитини"
           width="371"
@@ -27,7 +47,12 @@
         <p class="we-doing-img-title">Хрестини</p>
       </li>
       <li class="we-doing-item">
-        <img class="we-doing-img" src="../imeges/albom.jpg" alt="фото-альбоми" width="371" />
+        <img
+          class="we-doing-img"
+          src="../imeges/albom.jpg"
+          alt="фото-альбоми"
+          width="371"
+        />
         <p class="we-doing-img-title">фото-альбоми</p>
       </li>
     </ul>
@@ -49,19 +74,42 @@ ul {
   list-style: none;
 }
 .we-doing-list {
-  display: flex;
-  margin-top: 50px;
-  gap: 30px;
-  flex-wrap: wrap;
+  margin-top: 20px;
 }
-.we-doing-img{
-      width: 100%;
+@media screen and (min-width: 768px) {
+  .we-doing-list {
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .we-doing-list {
+    gap: 30px;
+  }
+}
 
+.we-doing-img {
+  width: 100%;
 }
 
 .we-doing-item {
   position: relative;
+
+}
+
+@media screen and (min-width: 768px) {
+  .we-doing-item {
+     position: relative;
+  width: calc((100% - 40px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .we-doing-item {
+     position: relative;
   width: calc((100% - 60px) / 3);
+  }
 }
 
 .we-doing-item:hover {

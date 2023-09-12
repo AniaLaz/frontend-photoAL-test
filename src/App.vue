@@ -41,3 +41,10 @@ export default {
 </style>
 
 <!-- npm run serve -->
+
+<!-- DEPLOY -->
+
+<!-- git add .   --------- зберігаєм зміни на git-->
+<!-- git commit -m "what i do"     ----------- робимо коміт-->
+<!-- git push -->
+<!-- npm run deploy    ------------- робимо деплой проекту-->

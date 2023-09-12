@@ -14,9 +14,9 @@
           <my-button class="btnOupen" @click="$router.push(`/post/${post._id}`)"
             >відкрити
           </my-button>
-          <my-button class="btnDalite" @click="$emit('remove', post)"
+          <!-- <my-button class="btnDalite" @click="$emit('remove', post)"
             >Стерти
-          </my-button>
+          </my-button> -->
         </div>
       </div>
     </div>
@@ -61,6 +61,7 @@ export default {
 }
 .btnOupen {
   margin-top: 120px;
+  margin-left: auto;
 
 }
 .imgPhoto {

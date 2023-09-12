@@ -8,13 +8,13 @@
       class="inputPost"
     />
     <div class="app__btns">
-      <my-button @click="showDialog">Створити пост </my-button>
+      <!-- <my-button @click="showDialog">Створити пост </my-button> -->
       <my-select v-model="selectedSort" :options="sortOptions"></my-select>
     </div>
 
-    <my-dialog v-model:show="dialogVisible">
+    <!-- <my-dialog v-model:show="dialogVisible">
       <PostForm @create="createPost" />
-    </my-dialog>
+    </my-dialog> -->
 
     <PostList
       class="postList"
@@ -34,7 +34,7 @@
 
 <script>
 import BoxContainer from "@/components/shared/BoxContainer.vue";
-import PostForm from "@/components/PostForm";
+// import PostForm from "@/components/PostForm";
 import PostList from "@/components/PostList";
 import axios from "axios";
 
@@ -57,21 +57,22 @@ export default {
     };
   },
   components: {
-    PostForm,
+    // PostForm,
     PostList,
-    BoxContainer},
+    BoxContainer,
+  },
   methods: {
-    createPost(post) {
-      this.posts.push(post);
-      this.dialogVisible = false;
-    },
+    // createPost(post) {
+    //   this.posts.push(post);
+    //   this.dialogVisible = false;
+    // },
     removePost(post) {
       this.posts = this.posts.filter((p) => p._id !== post._id);
       this.removePosts(post);
     },
-    showDialog() {
-      this.dialogVisible = true;
-    },
+    // showDialog() {
+    //   this.dialogVisible = true;
+    // },
     showBigPhoto() {
       this.dialogVisible = true;
     },
@@ -162,7 +163,7 @@ export default {
 </script>
 
 <style>
-.containerPost{
+.containerPost {
   text-align: center;
 }
 h1 {
@@ -172,7 +173,7 @@ h1 {
 }
 .app__btns {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   margin-top: 15px;
 }
 .inputPost {
